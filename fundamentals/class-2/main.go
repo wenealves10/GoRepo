@@ -14,15 +14,18 @@ func main() {
 	number := y1.Intn(10)
 	var userNumber int
 
-	fmt.Print("Digite um número: ")
-	fmt.Scanln(&userNumber)
+	for {
+		fmt.Print("Digite um número: ")
+		fmt.Scanln(&userNumber)
 
-	if number == userNumber {
-		fmt.Print("Você acertou!!!\n")
-	} else if number < userNumber {
-		fmt.Printf("Você chutou acima!!! \nValor era: %d\n", number)
-	} else if number > userNumber {
-		fmt.Printf("Você chutou abaixo!!! \nValor era: %d\n", number)
+		if number == userNumber {
+			fmt.Print("Você acertou!!!\n")
+			break
+		} else if number < userNumber {
+			fmt.Println("Você chutou acima!!!")
+		} else if number > userNumber {
+			fmt.Println("Você chutou abaixo!!!")
+		}
 	}
 
 }
