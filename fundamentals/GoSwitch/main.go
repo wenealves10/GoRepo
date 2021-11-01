@@ -2,8 +2,6 @@ package main
 
 import (
 	"fmt"
-
-	"github.com/inancgumus/screen"
 )
 
 func studyClass(n int) string {
@@ -27,8 +25,8 @@ func main() {
 	n := 0
 	fmt.Print("Digite sua nota: ")
 	fmt.Scanln(&n)
-	screen.Clear()
-	screen.MoveTopLeft()
+	fmt.Print("\033[2J")
+	fmt.Print("\033[H")
 
 	fmt.Println("Você está com nota: ", studyClass(n))
 }
