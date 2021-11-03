@@ -1,12 +1,12 @@
 package main
 
-import (
-	"fmt"
+// func forward(origin <-chan string, destiny chan string) {
+// 	for {
+// 		destiny <- <-origin
+// 	}
+// }
 
-	"github.com/wenealves10/htmlTitles"
-)
-
-func main() {
-	t2 := htmlTitles.Titles("https://wenedev.site")
-	fmt.Println(<-t2)
-}
+// func together(prohibited, prohibited2 <-chan string) <-chan string {
+// 	c := make(chan string)
+// 	go forward(prohibited, prohibited2)
+// }
